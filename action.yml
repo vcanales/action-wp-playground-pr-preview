@@ -7,6 +7,10 @@ inputs:
   ref: 
     description: 'git ref SHA'
     required: true
+  base-branch:
+    description: 'The branch with with to compare'
+    required: true
+    default: 'main'
 runs:
   using: 'node20'
   main: 'dist/index.js'
